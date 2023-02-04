@@ -1,0 +1,93 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+.menuItem_wrapper{
+  width: 100%;
+}
+.menuItem__main{
+  display: flex;
+  width: 100%;
+  align-items: center;  
+}
+.menuItem  h4 {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.menuItem__price{
+  color: #00754A;
+  font-weight: 600;
+}
+
+.menuItem__image {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 120px;
+}
+.menuItem__button{
+  margin-right: 4rem;
+  min-width: max-content;
+  padding: 1rem 2rem;
+  background-color: #00754A;
+  color: white;
+  outline: none;
+  z-index: 1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.menuItem__button:hover{
+  transition: all .2s linear;
+  color: #00754A;
+  background-color: white;
+  outline: 1px solid #00754A;
+}
+.menuItem__inner__container{
+  padding-left: 1rem;
+}
+.menuItem__button__group{
+  display: flex;
+  margin-right: 4rem;
+  background: #00754A;
+  color: white;
+  border-radius: 20px;
+  padding: .8rem;
+
+}
+
+.menuItem__button__group button {
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.2rem;
+  margin: 0 0.5rem;
+}
+.menuItem__button__group button svg {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menuItem__button{
+    margin-right: 1rem;
+  }
+  .menuItem__image {
+    width: 80px;
+  }
+  .menuItem > h4 {
+    font-size: 16px;
+  }
+  .menuItem__button__group{
+    margin-right: 1rem;
+  }
+}
